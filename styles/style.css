@@ -29,3 +29,10 @@
 
 /* jouw code */
 
+body {
+	font-family: 'open_sansregular';
+}
+
+h1 {
+	font-family: 'baloo';
+}

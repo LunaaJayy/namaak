@@ -1,0 +1,10 @@
+INDEX.HTML
+
+hoe moeten die sliders? Ga ik nog uitzoeken
+
+
+
+
+
+OVER-ONS.HTML
+moet de eerste img en h1 ook in section?
