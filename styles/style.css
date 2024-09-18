@@ -15,8 +15,10 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--color-text:#333;
 	--color-background:#eee;
+	--blue-background: #285aa0;
+	--white-background: #f6f4ed;
 }
 
 
@@ -29,32 +31,33 @@
 
 /* jouw code */
 
-@font-face {
-	font-family: 'Baloo';
-	src: url(Baloo-Regular.ttf);
-}
 
 /* ALGEMEEN */
+
+
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	color: #333;
+	color: var(--color-text);
+
 	margin: 0;
 }
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: var(--color-text);
 }
 
 h1, h2, h3 {
-	font-family: 'Baloo';
+	font-family: "Baloo 2";
 	color: white;
+
 	margin: 0;
 }
 
 footer {
-	background-color: #285aa0;
+	background-color: var(--blue-background);
 	color: white;
 }
 
@@ -64,9 +67,11 @@ footer h2 {
 
 /* HEADER */
 .h-bovenste{
-	background-color: #f6f4ed;
+	background-color: var(--white-background);
+
 	display: flex;
 	align-items: center;
+
 	height: 40px;
 	padding: 0 24px;
 }
@@ -74,6 +79,7 @@ footer h2 {
 .h-bovenste a {
 	display: flex;
 	align-items: center;
+
 	margin-right: auto;
 }
 
@@ -92,6 +98,7 @@ footer h2 {
 .h-onderste {
 	display: flex;
 	align-items: center;
+
 	height: 56px;
 	padding: 0 24px;
 }
@@ -115,31 +122,35 @@ footer h2 {
 	margin: 0 15px;
 }
 
+header section {
+	background-color: var(--blue-background);
+}
+
+header section img {
+	width: 100%;
+}
+
+h1 { 
+	font-size: 32px;
+	text-align: center;
+}
 
 /* INDEX */
 
-.indeks section:nth-of-type(1) {
-	background-color: #285aa0;
+.indeks section:nth-of-type(3) {
+	background-color: var(--white-background);
 }
 
-.indeks section:nth-of-type(4) {
-	background-color: #f6f4ed;
-}
-
-.indeks section:nth-of-type(8) {
-	background-color: #f6f4ed;
+.indeks section:nth-of-type(7) {
+	background-color: var(--white-background);
 }
 
 /* OVER ONS PAGINA */
 
 .overons section:nth-of-type(1) {
-	background-color: #285aa0;
+	background-color: var(--white-background);
 }
 
-.overons section:nth-of-type(2) {
-	background-color: #f6f4ed;
-}
-
-.overons section:nth-of-type(4) {
-	background-color: #f6f4ed;
+.overons section:nth-of-type(3) {
+	background-color: var(--white-background);
 }
