@@ -8,3 +8,17 @@ hoe moeten die sliders? Ga ik nog uitzoeken
 
 OVER-ONS.HTML
 moet de eerste img en h1 ook in section?
+
+
+ALGEMEEN
+custom properties gebruiken :) eerste les!
+    kan je dus ook heel makkelijk een light en dark mode toevoegen.
+
+box-sizing: border-box is heel handig, want als je zonder dat een margin 
+aan een element toevoegt telt dat bij de width van het element op, maar als je 
+border-box toevoegt gaat de margin/padding ipv aan de buitenkant van het object
+aan de binnenkant van het object worden toevoegt (waardoor hij in principe dus
+niet groter wordt)
+
+--> ipv bij de huizen dat in een li doet, kun 
+    je het als article binnen een section doen
