@@ -29,9 +29,16 @@
 
 /* jouw code */
 
+@font-face {
+	font-family: 'Baloo';
+	src: url(Baloo-Regular.ttf);
+}
+
 /* ALGEMEEN */
 body {
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #333;
 }
 
 header div{
@@ -39,8 +46,27 @@ header div{
 	display: flex;
 }
 
-h1 {
-	font-family: sans-serif;
+header div img:nth-of-type(1) {
+	height: 25px;
+}
+
+header img:nth-of-type(2) {
+	height: 20px;
+}
+
+header > a img {
+	width: 160px;
+}
+
+header a:nth-of-type(2) img, header a:nth-of-type(3) img {
+	height: 20px;
+	width: auto;
+}
+
+
+
+h1, h2, h3 {
+	font-family: 'Baloo';
 	color: white;
 }
 
