@@ -19,6 +19,8 @@
 	--color-background:#eee;
 	--blue-background: #285aa0;
 	--white-background: #f6f4ed;
+	--color-text-white: white;
+	--border-gray: lightgray;
 }
 
 
@@ -37,9 +39,11 @@
 
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 375;
 	color: var(--color-text);
+	font-size: 14px;
+	line-height: 150%;
 
 	margin: 0;
 }
@@ -51,14 +55,17 @@ a {
 
 h1, h2, h3 {
 	font-family: "Baloo 2";
-	color: white;
+	color: var(--color-text);
+}
 
-	margin: 0;
+h3 {
+	font-size: 20px;
+	margin: 0 0 16px 0;
 }
 
 footer {
 	background-color: var(--blue-background);
-	color: white;
+	color: var(--color-text-white)
 }
 
 footer h2 {
@@ -122,23 +129,208 @@ footer h2 {
 	margin: 0 15px;
 }
 
-header section {
+header>section {
 	background-color: var(--blue-background);
+	font-family: "Baloo 2";
+	color: white;
+	font-weight: 650;
+	font-size: 18px;
+	padding-bottom: 18px;
 }
 
-header section img {
+
+header section>img:nth-of-type(1) {
+	object-fit: cover;
+	height: 225px;
 	width: 100%;
 }
 
 h1 { 
+	color: var(--color-text-white);
 	font-size: 32px;
-	text-align: center;
+	line-height: 32px;
+	padding: 18px 24px 0 24px;
+	margin-bottom: 16px;
+}
+
+.linkje {
+	font-weight: 650;
+	font-size: 16px;
+	color: #285aa0;
+	text-decoration: underline;
 }
 
 /* INDEX */
 
+/* header */
+/* fotos en teksten */
+header section div img {
+	width: 80px;
+	margin: auto 8px;
+}
+
+
+header section div p:nth-of-type(1) {
+	margin: 0 0 0 8px;
+}
+
+header section div p:nth-of-type(2) {
+	margin: 0 8px 0 0;
+	font-size: 12px;
+	
+	position: relative;
+	top: -3px;
+}
+
+header section div p:nth-of-type(3) {
+	margin: 0 8px
+}
+
+header section div p:nth-of-type(4) {
+	margin: 0 18px 0 8px;
+}
+
+header section div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+/* linkjes */
+.header-knoppen {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.header-knoppen a {
+	color: white;
+	border-radius: 4px;
+	
+	margin: 0 0 16px 0;
+	padding: 0 16px;
+	align-content: center;
+	text-align: center;
+	height: 48px;
+	width: 327px;
+}
+
+.header-knoppen a:nth-of-type(1) {
+	background-color: #00966e;
+}
+
+.header-knoppen a:nth-of-type(2) {
+	border: solid white ;
+}
+
+/* main */
+
+.indeks section {
+	padding: 0 24px;
+}
+
+.indeks h2 {
+	font-size: 28px;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+
+/* intro section (1) */
+
+.indeks>section:nth-of-type(1) h2 {
+	padding-top: 30px;
+}
+
+.indeks>section:nth-of-type(1)>p {
+	margin-bottom: 24px;
+}
+
+.indeks>section:nth-of-type(1) a:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
+}
+
+.indeks>section:nth-of-type(1) div {
+	height: 250px;
+	width: 250px;
+	margin-top: 30px;
+	background-color: var(--blue-background);
+	border-radius: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.indeks>section:nth-of-type(1) div p:nth-of-type(1) {
+	font-family: "Baloo 2";
+	font-size: 54px;
+	color: white;
+	font-weight: 725;
+	margin: 35px 0 0 0;
+	
+	/* om het 'blokje' eromheen zo groot te maken als font-size */
+	padding: 6.5px 0;
+}
+
+.indeks>section:nth-of-type(1) div p:nth-of-type(2) {
+	font-family: "Baloo 2";
+	font-size: 24px;
+	font-weight: 725;
+	text-align: center;
+	
+	background-color: #f7ecd5;
+	border-radius: 8px;
+	
+	padding: 4px;
+	margin-top: 20px;
+	transform: rotate(-2.5deg);
+}
+
+/* voordelen section (2) */
+
+.indeks section:nth-of-type(2) {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.indeks section:nth-of-type(2) article {
+	border: 1px solid var(--border-gray);
+	border-radius: 10px;
+	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+}
+
+.indeks section:nth-of-type(2) article:not(.indeks section:nth-of-type(2) article:nth-of-type(3)){
+margin-bottom: 32px;
+}
+
+.indeks section:nth-of-type(2) article img {
+	object-fit: cover;
+	width: 100%;
+}
+
+.indeks section:nth-of-type(2) article div {
+	padding: 20px;
+}
+
+/* besparing berekenen section (3) */
+
 .indeks section:nth-of-type(3) {
 	background-color: var(--white-background);
+	padding-top: 56px;
+	padding-bottom: 56px;
+}
+
+.besparing {
+	background-color: white;
+	border: 1px solid var(--border-gray);
+	border-radius: 10px;
+	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.08);
 }
 
 .indeks section:nth-of-type(7) {

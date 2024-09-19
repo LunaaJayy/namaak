@@ -1,0 +1,4 @@
+De lessen
+
+Image croppen:
+    https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css#:~:text=with%20the%20message.-,Crop%20Using%20Width%2C%20Height%2C%20and%20Overflow%20CSS%20Properties,and%20set%20overflow%20to%20hidden.
