@@ -5,6 +5,12 @@ hoe moeten die sliders? Ga ik nog uitzoeken
 
 de a bij de reviewsection verplaats niet naar center en niet
 als er een padding of margin wordt toegevoegd.
+--dat is omdat hij display inline was en niet block
+
+bij 'ons woningaanbod' doet de 'object-fit: cover' het niet
+--je moest nog op de container overflow:hidden doen.
+
+///hoe haal ik het witte voor de footer weg?
 
 
 OVER-ONS.HTML
@@ -23,3 +29,5 @@ niet groter wordt)
 
 --> ipv bij de huizen dat in een li doet, kun 
     je het als article binnen een section doen
+
+///Moet je grid gebruiken?

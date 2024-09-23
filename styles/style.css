@@ -14,17 +14,19 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* kleuren */
 	--color-text:#333;
 	--color-background:white;
 	--blue-background: #285aa0;
 	--white-background: #f6f4ed;
-	--color-text-white: white;
 	--border-gray: lightgray;
 	--blijft-wit: white;
 	--knop-kleur-groen: #00966e;
 	--border-kleur: #bdbdbd;
+	--blauwe-tekst: #285aa0;
 	--schaduw-box: 0px 2px 0px rgba(0, 0, 0, 0.08);
+	--beige-tekst-footer: #F5E6C3;
+	--footer-link: #BFD5DF;
 }
 
 
@@ -49,7 +51,7 @@ body {
 	font-weight: 375;
 	color: var(--color-text);
 	font-size: 16px;
-	line-height: 150%;
+	line-height: 1.5;
 
 	margin: 0;
 }
@@ -69,14 +71,6 @@ h3 {
 	margin: 0 0 16px 0;
 }
 
-footer {
-	background-color: var(--blue-background);
-	color: var(--color-text-white)
-}
-
-footer h2 {
-	color: #f5e6c3;
-}
 
 strong {
 	font-weight: 550;
@@ -156,7 +150,7 @@ header section>img:nth-of-type(1) {
 }
 
 h1 { 
-	color: var(--color-text-white);
+	color: var(--blijft-wit);
 	font-size: 32px;
 	line-height: 32px;
 	padding: 18px 24px 0 24px;
@@ -167,7 +161,7 @@ h1 {
 .linkje {
 	font-weight: 650;
 	font-size: 16px;
-	color: #285aa0;
+	color: var(--blauwe-tekst);
 	text-decoration: underline;
 }
 
@@ -233,6 +227,121 @@ header section div {
 
 .header-knoppen a:nth-of-type(2) {
 	border: solid var(--blijft-wit) ;
+}
+
+/* footer */
+
+footer {
+	background-color: var(--blue-background);
+	color: var(--blijft-wit);
+	padding: 54px 24px;
+}
+
+footer:not(footer h3) {
+	font-weight: 300;
+}
+
+footer h3 {
+	color: var(--beige-tekst-footer);
+	font-size: 18px;
+}
+
+footer>div:not(footer>div:last-of-type) {
+	margin-bottom: 12px;
+}
+
+footer>div:nth-of-type(1) img, footer>div:nth-of-type(2) img {
+	width: 16px;
+	margin-right: 7px;
+}
+
+footer>div p {
+	display: inline;
+}
+
+footer a {
+	color: var(--blijft-wit);
+	
+}
+
+footer>div:nth-of-type(1) a, footer>div:nth-of-type(2) a {
+	text-decoration: underline;
+} 
+
+footer>p:nth-of-type(1) {
+	font-size: 13px;
+	font-weight: 250;
+	line-height: 150%;
+	margin-bottom: 40px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0 0 40px;
+	padding: 0;
+	line-height: 1.15;
+}
+
+footer li {
+	margin: 0 0 16px;
+}
+
+footer ul:nth-of-type(3) {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+footer ul:nth-of-type(3) li{
+	margin-right: 8px;
+	margin-bottom: 0;
+}
+
+footer ul:nth-of-type(3) img {
+	width: 32px;
+}
+
+footer>p a {
+	text-decoration: underline;
+}
+
+footer div:nth-last-of-type(2) {
+	display: flex;
+	justify-content: center;
+	margin-top: 72px;
+	border-bottom: solid var(--border-gray) 0.5px;
+	padding-bottom: 24px;
+}
+
+footer div:nth-last-of-type(2) img:nth-of-type(1) {
+	width: 25px;
+	margin: 0 25px 0 0;
+}
+
+footer div:nth-last-of-type(2) img:nth-of-type(2) {
+	width: 74px;
+}
+
+footer>div:last-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px 0;
+}
+
+footer>div:last-of-type a:first-of-type img {
+	width: 220px;
+	margin: 0 0 40px;
+}
+
+
+footer>div>div a {
+	color: var(--footer-link);
+
+	text-align: center;
+}
+
+footer>div>div a:not(footer>div>div a:last-of-type) {
+	margin: 0 20px 0 0;
 }
 
 /* INDEX */
@@ -493,7 +602,7 @@ margin-bottom: 32px;
 
 .indeks section:nth-of-type(5) div:nth-of-type(2) {
 	display: flex;
-	overflow-x:auto;
+	overflow-x: scroll;
 }
 
 .indeks section:nth-of-type(5) article {
@@ -561,8 +670,9 @@ margin-bottom: 32px;
 .indeks section:nth-of-type(5) a {
 	color: var(--blue-background);
 	font-weight: 500;
+	display: block;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 25px;
 }
 
 /* woningaanbod section (6) */
@@ -573,7 +683,7 @@ margin-bottom: 32px;
 
 .indeks section:nth-of-type(6)>div {
 	display: flex;
-	overflow-x: auto;
+	overflow-x: scroll;
 }
 
 .indeks section:nth-of-type(6) article {
@@ -587,6 +697,7 @@ margin-bottom: 32px;
 	box-shadow: var(--schaduw-box);
 	border: 1px solid var(--border-gray);
 	border-radius: 8px;
+	overflow: hidden;
 }
 
 .indeks section:nth-of-type(6) article img {
@@ -622,8 +733,114 @@ margin-bottom: 32px;
 	padding-bottom: 16px;
 }
 
+.blauwe-knop {
+	color: var(--blauwe-tekst);
+	display: block;
+	text-align: center;
+	
+	border: solid var(--blauwe-tekst) 1px;
+	border-radius: 100px;
+	
+	height: 40px;
+	align-content: center;
+	margin: 48px 0;
+}
+
+/* laatste nieuws section(7) */
+
 .indeks section:nth-of-type(7) {
 	background-color: var(--white-background);
+	padding: 56px 24px 8px;
+}
+
+.indeks section:nth-of-type(7) h2 {
+	font-size: 24px;
+	text-align: center;
+	margin: 0 0 32px;
+}
+
+.indeks section:nth-of-type(7)>div {
+	display: flex;
+	overflow-x: scroll;
+}
+
+.indeks section:nth-of-type(7) article {
+	width: 100%;
+	flex: 0 0 290px;
+	padding-right: 12px;
+	margin-top: 32px;
+}
+
+.indeks section:nth-of-type(7) article div {
+	background-color: var(--color-background);
+	overflow: hidden;
+
+	box-shadow: var(--schaduw-box);
+	border: 1px solid var(--border-gray);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.indeks section:nth-of-type(7) article div img {
+	height: 160px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.indeks section:nth-of-type(7) article div h3 {
+	font-size: 22px;
+	padding: 16px 16px 0;
+	margin: 0 0 12px;
+}
+
+.indeks section:nth-of-type(7) article div p {
+	font-size: 14px;
+	margin: 0;
+	padding: 0 16px 16px;
+}
+
+/* contact opnemen section (8) */
+
+.indeks section:nth-of-type(8) h2{
+	margin: 48px 0 0 0;
+}
+
+.indeks section:nth-of-type(8) p {
+	font-size: 14px;
+	margin: 16px 0 14px;
+}
+
+.indeks section:nth-of-type(8) a:nth-of-type(1) {
+	font-family: "Baloo 2";
+	font-weight: 700;
+	font-size: 18px;
+
+	color: var(--blijft-wit);
+	background-color: var(--knop-kleur-groen);
+	border-radius: 4px;
+	
+	display: block;
+	text-align: center;
+	padding: 0 16px;
+	height: 48px;
+	width: 150px;
+	align-content: center;
+
+	margin: 24px 0 0;
+}
+
+.indeks section:nth-of-type(8) a:nth-of-type(2) {
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	margin: 24px 0 0;
+}
+
+.indeks>img {
+	object-fit: cover;
+	width: 100%;
+	height: 400px;
+	margin: 48px 0 0 0;
 }
 
 /* OVER ONS PAGINA */
