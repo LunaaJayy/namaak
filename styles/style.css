@@ -16,14 +16,16 @@
 :root {
 	/* startje */
 	--color-text:#333;
-	--color-background:#eee;
+	--color-background:white;
 	--blue-background: #285aa0;
 	--white-background: #f6f4ed;
 	--color-text-white: white;
 	--border-gray: lightgray;
+	--blijft-wit: white;
+	--knop-kleur-groen: #00966e;
+	--border-kleur: #bdbdbd;
+	--schaduw-box: 0px 2px 0px rgba(0, 0, 0, 0.08);
 }
-
-
 
 
 
@@ -35,6 +37,10 @@
 
 
 /* ALGEMEEN */
+.indeks img {
+	width: 80%;
+}
+
 
 
 
@@ -42,7 +48,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 375;
 	color: var(--color-text);
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 150%;
 
 	margin: 0;
@@ -70,6 +76,10 @@ footer {
 
 footer h2 {
 	color: #f5e6c3;
+}
+
+strong {
+	font-weight: 550;
 }
 
 /* HEADER */
@@ -132,7 +142,7 @@ footer h2 {
 header>section {
 	background-color: var(--blue-background);
 	font-family: "Baloo 2";
-	color: white;
+	color: var(--blijft-wit);
 	font-weight: 650;
 	font-size: 18px;
 	padding-bottom: 18px;
@@ -151,6 +161,7 @@ h1 {
 	line-height: 32px;
 	padding: 18px 24px 0 24px;
 	margin-bottom: 16px;
+	margin-top: 0;
 }
 
 .linkje {
@@ -159,8 +170,6 @@ h1 {
 	color: #285aa0;
 	text-decoration: underline;
 }
-
-/* INDEX */
 
 /* header */
 /* fotos en teksten */
@@ -207,7 +216,7 @@ header section div {
 }
 
 .header-knoppen a {
-	color: white;
+	color: var(--blijft-wit);
 	border-radius: 4px;
 	
 	margin: 0 0 16px 0;
@@ -219,12 +228,14 @@ header section div {
 }
 
 .header-knoppen a:nth-of-type(1) {
-	background-color: #00966e;
+	background-color: var(--knop-kleur-groen);
 }
 
 .header-knoppen a:nth-of-type(2) {
-	border: solid white ;
+	border: solid var(--blijft-wit) ;
 }
+
+/* INDEX */
 
 /* main */
 
@@ -246,6 +257,8 @@ header section div {
 
 .indeks>section:nth-of-type(1)>p {
 	margin-bottom: 24px;
+	font-size: 14px;
+	line-height: 150%;
 }
 
 .indeks>section:nth-of-type(1) a:nth-of-type(2) {
@@ -269,12 +282,10 @@ header section div {
 .indeks>section:nth-of-type(1) div p:nth-of-type(1) {
 	font-family: "Baloo 2";
 	font-size: 54px;
-	color: white;
+	line-height: 54px;
+	color: var(--blijft-wit);
 	font-weight: 725;
 	margin: 35px 0 0 0;
-	
-	/* om het 'blokje' eromheen zo groot te maken als font-size */
-	padding: 6.5px 0;
 }
 
 .indeks>section:nth-of-type(1) div p:nth-of-type(2) {
@@ -301,7 +312,7 @@ header section div {
 .indeks section:nth-of-type(2) article {
 	border: 1px solid var(--border-gray);
 	border-radius: 10px;
-	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--schaduw-box);
 	overflow: hidden;
 }
 
@@ -314,8 +325,13 @@ margin-bottom: 32px;
 	width: 100%;
 }
 
+
 .indeks section:nth-of-type(2) article div {
 	padding: 20px;
+}
+
+.indeks section:nth-of-type(2) article div p {
+	line-height: 24px;
 }
 
 /* besparing berekenen section (3) */
@@ -327,10 +343,283 @@ margin-bottom: 32px;
 }
 
 .besparing {
-	background-color: white;
+	background-color: var(--color-background);
 	border: 1px solid var(--border-gray);
 	border-radius: 10px;
-	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.08);
+	box-shadow: var(--schaduw-box);
+	padding: 32px !important;
+}
+
+.besparing h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.besparing p {
+	margin: 0;
+	padding: 15px 0;
+}
+
+.besparing div:not(.besparing div:last-of-type) {
+	display: flex;
+	justify-content: space-between;
+}
+
+.besparing>p:last-of-type, .besparing>p:nth-last-of-type(2) {
+	font-family: "Baloo 2";
+	font-weight: 700;
+	padding: 0;
+}
+
+.besparing>p:nth-last-of-type(2) {
+	font-size: 28px;
+	line-height: 28px;
+	padding-top: 25px;
+}
+
+.besparing>p:last-of-type {
+	font-size: 48px;
+	line-height: 48px;
+	padding-bottom: 25px;
+}
+
+.besparing a:nth-of-type(1) {
+	color: var(--blijft-wit);
+	background-color: var(--knop-kleur-groen);
+
+	font-family: "Baloo 2";
+	font-weight: 650;
+    font-size: 18px;
+	text-align: center;
+	
+	padding: 0 16px;
+	border-radius: 4px;
+	height: 48px;
+	align-content: center;
+}
+
+.besparing a:nth-of-type(2) {
+	margin-top: 25px;
+}
+
+.besparing div:last-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.indeks section:nth-of-type(3)>p{
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	padding: 20px 0;
+	margin: 0;
+}
+
+.indeks iframe {
+	height: 470px;
+	width: 100%;
+	border-radius: 8px;
+}
+
+/* kennismaken section (4) */
+
+.indeks section:nth-of-type(4) {
+	padding: 56px 24px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.indeks section:nth-of-type(4) img{
+	width: 128px;
+	height: 128px;
+	border-radius: 100px;
+}
+
+.indeks section:nth-of-type(4) h2 {
+	font-size: 22px;
+	margin: 24px 0 10px;
+}
+
+.indeks section:nth-of-type(4) p {
+	text-align: center;
+}
+
+.indeks section:nth-of-type(4) a:nth-of-type(1) {
+	font-family: "Baloo 2";
+	font-weight: 650;
+	color: var(--blijft-wit);
+	background-color: var(--knop-kleur-groen);
+
+	border-radius: 4px;
+	margin: 0 0 16px 0;
+	padding: 0 16px;
+
+	align-content: center;
+	text-align: center;
+	height: 48px;
+	width: 327px;
+}
+
+.indeks section:nth-of-type(4) a:nth-of-type(2) {
+	text-decoration: none;
+}
+
+/* reviews section (5) */
+.indeks section:nth-of-type(5) {
+	padding: 56px 24px;
+
+}
+.indeks section:nth-of-type(5) h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+.indeks section:nth-of-type(5)>div:nth-of-type(1) {
+	display: flex;
+	justify-content: center;
+
+	border-bottom: solid var(--border-kleur) 0.5px;
+	margin-bottom: 48px;
+}
+
+.indeks section:nth-of-type(5) img {
+	height: 75px;
+	width: auto;
+}
+
+.indeks section:nth-of-type(5) div:nth-of-type(2) {
+	display: flex;
+	overflow-x:auto;
+}
+
+.indeks section:nth-of-type(5) article {
+	width: 100%;
+	flex: 0 0 290px;
+	padding-right: 12px;
+}
+
+.indeks section:nth-of-type(5) article>div {
+	background-color: var(--white-background);
+	border-radius: 8px;
+    box-shadow: var(--schaduw-box);
+	padding: 24px 16px;
+
+}
+
+.indeks section:nth-of-type(5) article h3 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.cijfers {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+.cijfers p {
+	font-family: "Baloo 2";
+	color: var(--knop-kleur-groen);
+	font-weight: 700;
+}
+
+.cijfers p:nth-of-type(1) {
+	font-size: 40px;
+	line-height: 40px;
+}
+
+.cijfers p:nth-of-type(2) {
+	font-size: 24px;
+	padding-bottom: 4px;
+}
+
+.cijfers p:nth-of-type(3) {
+	font-size: 18px;
+	padding-bottom: 15px;
+}
+
+.indeks section:nth-of-type(5) article div p {
+	margin: 0;
+}
+
+.indeks section:nth-of-type(5) article div p:nth-of-type(1):not(.cijfers p) {
+	font-size: 14px;
+	line-height: 150%;
+	padding: 0 16px;
+}
+
+.indeks section:nth-of-type(5) article div p:nth-of-type(2):not(.cijfers p) {
+	color: #9d9c9a;
+	text-align: center;
+	padding-top: 18px;
+}
+
+.indeks section:nth-of-type(5) a {
+	color: var(--blue-background);
+	font-weight: 500;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* woningaanbod section (6) */
+.indeks section:nth-of-type(6) h2{
+	font-size: 24px;
+	text-align: center;
+}
+
+.indeks section:nth-of-type(6)>div {
+	display: flex;
+	overflow-x: auto;
+}
+
+.indeks section:nth-of-type(6) article {
+	width: 100%;
+	flex: 0 0 290px;
+	padding-right: 12px;
+}
+
+
+.indeks section:nth-of-type(6) article div {
+	box-shadow: var(--schaduw-box);
+	border: 1px solid var(--border-gray);
+	border-radius: 8px;
+}
+
+.indeks section:nth-of-type(6) article img {
+	object-fit: cover;
+	width: 100%;
+}
+
+.indeks section:nth-of-type(6) article p,.indeks section:nth-of-type(6) article h3 {
+	padding-left: 16px;
+}
+
+.indeks section:nth-of-type(6) article h3 {
+	font-size: 18px;
+	padding-top: 16px;
+	margin: 0 0 4px;
+}
+
+.indeks section:nth-of-type(6) article p:nth-of-type(1) {
+	margin: 0 0 12px;
+	font-size: 13px;
+} 
+
+.indeks section:nth-of-type(6) article p:nth-of-type(2) {
+	font-family: "Baloo 2";
+	font-weight: 700;
+	font-size: 18px;
+	margin: 0 0 12px;
+}
+
+.indeks section:nth-of-type(6) article p:nth-of-type(3) {
+	font-size: 13px;
+	margin: 0;
+	padding-bottom: 16px;
 }
 
 .indeks section:nth-of-type(7) {

@@ -3,7 +3,8 @@ INDEX.HTML
 hoe moeten die sliders? Ga ik nog uitzoeken
 
 
-
+de a bij de reviewsection verplaats niet naar center en niet
+als er een padding of margin wordt toegevoegd.
 
 
 OVER-ONS.HTML
