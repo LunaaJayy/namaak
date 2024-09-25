@@ -40,12 +40,6 @@
 
 
 /* ALGEMEEN */
-.overons img {
-	width: 80%;
-}
-
-
-
 
 body {
 	font-family: "Open Sans", sans-serif;
@@ -145,7 +139,8 @@ strong {
 	padding-left: 10px;
 }
 
-.h-onderste button div {
+.h-onderste button span {
+	display: block;
 	width: 24px;
     height: 2px;
 	margin: 7px auto;
@@ -259,12 +254,12 @@ nav {
 	top: 0;
 	bottom: 0;
 
-	translate:-100% 0%;
+	transform: translate(-100%, 0%);
 	transition:translate .3s;
 }
 
 nav.toonMenu {
-	translate: 0% 0%;
+	transform: translate(0%, 0%);
 }
 
 nav>div:first-of-type {
@@ -294,20 +289,20 @@ nav button {
 	border-left: 1px solid var(--beige-tekst-footer);
 }
 
-nav button div {
+nav button span {
+	display: block;
 	width: 24px;
 	height: 2px;
 
 	background-color: var(--beige-tekst-footer);
 }
 
-nav button div:first-of-type {
-	rotate: 45deg;
-	translate: 0 1.75px;
+nav button span:first-of-type {
+	transform: rotate(45deg) translate(1px, 1.75px);
 }
 
-nav button div:last-of-type {
-	rotate: -45deg;
+nav button span:last-of-type {
+	transform: rotate(-45deg);
 }
  
 nav ul {
@@ -616,6 +611,14 @@ margin-bottom: 32px;
 	justify-content: space-between;
 }
 
+.besparing input[type='range'] {
+	-webkit-appearance: none;
+	width: 100%;
+	background-color: #00966e;
+	height: 5px;
+}
+
+
 .besparing>p:last-of-type, .besparing>p:nth-last-of-type(2) {
 	font-family: "Baloo 2";
 	font-weight: 700;
@@ -672,6 +675,7 @@ margin-bottom: 32px;
 	height: 470px;
 	width: 100%;
 	border-radius: 8px;
+	border: none;
 }
 
 /* kennismaken section (4) */
@@ -1048,6 +1052,7 @@ margin-bottom: 32px;
 	height: 100%;
 
 	margin-bottom: 36px;
+	border: none;
 }
 
 .overons section:nth-of-type(2) p {
