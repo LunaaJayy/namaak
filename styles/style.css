@@ -56,6 +56,10 @@ body {
 	margin: 0;
 }
 
+.hidden {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 	color: var(--color-text);
@@ -133,7 +137,22 @@ strong {
 	margin: 0 15px;
 }
 
-header>section {
+.h-onderste button {
+	border: none;
+	background-color: transparent;
+	border-left: 1px solid var(--border-gray);
+	padding-left: 10px;
+}
+
+.h-onderste button div {
+	width: 24px;
+    height: 2px;
+	margin: 7px auto;
+
+	background-color: var(--blauwe-tekst);
+}
+
+header>section:nth-of-type(2) {
 	background-color: var(--blue-background);
 	font-family: "Baloo 2";
 	color: var(--blijft-wit);
@@ -143,7 +162,7 @@ header>section {
 }
 
 
-header section>img:nth-of-type(1) {
+header section:nth-of-type(2)>img:nth-of-type(1) {
 	object-fit: cover;
 	height: 225px;
 	width: 100%;
@@ -167,25 +186,25 @@ h1 {
 
 /* header */
 /* fotos en teksten */
-header section div img {
+header section:nth-of-type(2) div img {
 	width: 80px;
 	margin: auto 8px;
 }
 
 
-header section div p:nth-of-type(1) {
+header section:nth-of-type(2) div p:nth-of-type(1) {
 	margin: 0 0 0 8px;
 }
 
-header section div p:nth-of-type(2) {
+header section:nth-of-type(2) div p:nth-of-type(2) {
 	margin: 0 8px 0 0;
 	font-size: 12px;
-	
-	position: relative;
-	top: -3px;
+
+	padding-bottom: 7px;
 }
 
-header section div p:nth-of-type(3) {
+
+header section:nth-of-type(2) div p:nth-of-type(3) {
 	margin: 0 8px
 }
 
@@ -193,7 +212,7 @@ header section div p:nth-of-type(4) {
 	margin: 0 18px 0 8px;
 }
 
-header section div {
+header section:nth-of-type(2) div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -227,6 +246,123 @@ header section div {
 
 .header-knoppen a:nth-of-type(2) {
 	border: solid var(--blijft-wit) ;
+}
+
+/* hamburger menu */
+
+nav {
+	background-color: var(--blue-background);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	translate:-100% 0%;
+	transition:translate .3s;
+}
+
+nav.toonMenu {
+	translate: 0% 0%;
+}
+
+nav>div:first-of-type {
+	display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 24px;
+}
+
+nav div:first-of-type img {
+	height: 20px;
+}
+
+nav div:first-of-type>img {
+	margin-right: auto;
+}
+
+nav div:first-of-type a {
+	margin: 0 15px;
+}
+
+nav button {
+	border: none;
+	background-color: transparent;
+}
+
+nav button div {
+	width: 24px;
+	height: 2px;
+
+	background-color: var(--beige-tekst-footer);
+}
+
+nav button div:first-of-type {
+	rotate: 45deg;
+	translate: 0 1.75px;
+}
+
+nav button div:last-of-type {
+	rotate: -45deg;
+}
+ 
+nav ul {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid rgba(224, 224, 224, 0.2);
+
+	list-style: none;
+}
+
+nav ul a {
+	display: block;
+	padding: 16px 24px;
+
+	color: var(--blijft-wit);
+	font-weight: 600;
+
+	border-bottom: 1px solid rgba(224, 224, 224, 0.2);
+}
+
+nav>div:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+nav div:nth-of-type(2) a {
+	font-family: "Baloo 2";
+	font-size: 18px;
+	font-weight: 650;
+	color: var(--blijft-wit);
+
+	display: block;
+	text-align: center;
+	align-content: center;
+
+	height: 48px;
+	width: 327px;
+	border-radius: 4px;
+	margin: 0 0 16px 0;
+	padding: 0 16px;
+}
+
+nav div:nth-of-type(2) a:first-of-type {
+	border: 1px solid var(--blijft-wit);
+	margin-top: 25px;
+}
+
+nav div:nth-of-type(2) a:nth-of-type(2) {
+	background-color: #25D366;
+}
+
+nav div:nth-of-type(2) a:nth-of-type(3){
+	background-color: var(--knop-kleur-groen);
+}
+
+nav div:nth-of-type(2) a img {
+	height: 20px;
+	padding-right: 5px;
 }
 
 /* footer */
