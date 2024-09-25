@@ -27,6 +27,7 @@
 	--schaduw-box: 0px 2px 0px rgba(0, 0, 0, 0.08);
 	--beige-tekst-footer: #F5E6C3;
 	--footer-link: #BFD5DF;
+	--grijze-tekst: rgba(63, 63, 63, 0.5);
 }
 
 
@@ -39,7 +40,7 @@
 
 
 /* ALGEMEEN */
-.indeks img {
+.overons img {
 	width: 80%;
 }
 
@@ -245,7 +246,7 @@ header section:nth-of-type(2) div {
 }
 
 .header-knoppen a:nth-of-type(2) {
-	border: solid var(--blijft-wit) ;
+	border: solid var(--blijft-wit);
 }
 
 /* hamburger menu */
@@ -288,6 +289,9 @@ nav div:first-of-type a {
 nav button {
 	border: none;
 	background-color: transparent;
+	padding: 10px 0 10px 10px;
+	
+	border-left: 1px solid var(--beige-tekst-footer);
 }
 
 nav button div {
@@ -480,13 +484,15 @@ footer>div>div a:not(footer>div>div a:last-of-type) {
 	margin: 0 20px 0 0;
 }
 
+
+
+main section {
+	padding: 0 24px;
+}
+
 /* INDEX */
 
 /* main */
-
-.indeks section {
-	padding: 0 24px;
-}
 
 .indeks h2 {
 	font-size: 28px;
@@ -981,10 +987,176 @@ margin-bottom: 32px;
 
 /* OVER ONS PAGINA */
 
+.overons h2 {
+	margin: 0 0 20px;
+	line-height: 24px;
+}
+
+.overons p {
+	font-size: 14px;
+	margin: 0 0 24px;
+}
+
+.overons strong {
+	color: var(--knop-kleur-groen);
+	font-weight: 700;
+}
+
+.overons em {
+	line-height: 21px;
+	font-weight: 350;
+}
+
+/* header section */
+.h-overons {
+	padding: 0 0 18px 0;
+}
+
+.h-overons h1 {
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+
+	text-align: center;
+}
+
+/* hier vandaan section (1) */
+
 .overons section:nth-of-type(1) {
 	background-color: var(--white-background);
+	padding-top: 56px;
+	padding-bottom: 56px;
 }
+
+.overons section:nth-of-type(1) img{
+	height: 204px;
+	width: auto;
+
+	display: block;
+	margin: 0 auto 36px;
+}
+
+/* hier staan wij voor section (2) */
+
+.overons section:nth-of-type(2) {
+	padding-top: 56px;
+	padding-bottom: 56px;
+}
+
+.overons section:nth-of-type(2) iframe {
+	width: 100%;
+	height: 100%;
+
+	margin-bottom: 36px;
+}
+
+.overons section:nth-of-type(2) p {
+	margin: 0;
+}
+
+/* directeur section (3) */
 
 .overons section:nth-of-type(3) {
 	background-color: var(--white-background);
+	padding-top: 56px;
+	padding-bottom: 56px;
 }
+
+.overons section:nth-of-type(3) img {
+	height: 204px;
+	width: auto;
+
+	display: block;
+	margin: 0 auto 36px;
+}
+
+.overons section:nth-of-type(3) p:last-of-type {
+	margin: 0;
+}
+
+/* team section (4) */
+
+.overons section:nth-of-type(4) {
+	padding-top: 56px;
+	padding-bottom: 56px;
+
+	display: grid;
+	grid-template: repeat(8, auto) / 50% 50%;
+}
+
+.overons section:nth-of-type(4) h2, .overons section:nth-of-type(4)>p {
+	text-align: center;
+	grid-column: 1 / 3;
+}
+
+.overons section:nth-of-type(4)>p {
+	margin: 0 0 16px;
+}
+
+.overons section:nth-of-type(4) article {
+	margin: 10px;
+}
+
+.overons section:nth-of-type(4) article img {
+	border-radius: 12px;
+	width: 100%;
+}
+
+.overons section:nth-of-type(4) article h3 {
+	font-size: 16px;
+	margin: 13px 0 0;
+}
+
+.overons section:nth-of-type(4) article p {
+	font-size: 12.8px;
+	color: var(--grijze-tekst);
+	margin: 0;
+}
+
+.kom-werken {
+	font-family: "Baloo 2";
+	color: var(--color-text) !important;
+	font-size: 20px !important;
+	font-weight: 800;
+}
+
+.overons section:nth-of-type(4) article:nth-of-type(5) {
+	display: flex;
+	align-items: center;
+}
+
+/* adres section (5) */
+
+.overons section:nth-of-type(5) {
+	padding-top: 16px;
+	padding-bottom: 56px;
+}
+
+.overons section:nth-of-type(5) img {
+	width: 310px;
+	height: auto;
+
+	display: block;
+	margin: 0 auto 36px;
+}
+
+.overons section:nth-of-type(5) iframe {
+	width: 100%;
+	height: 350px;
+	
+	margin-bottom: 24px;
+}
+
+.overons section:nth-of-type(5) p:not(.overons section:nth-of-type(5) p:first-of-type) {
+	margin: 0;
+}
+
+.overons section:nth-of-type(5) p:nth-of-type(2) {
+	margin-top: 14px !important;
+}
+
+.overons section:nth-of-type(5) a {
+	color: var(--blauwe-tekst);
+	text-decoration: underline;
+}
+
