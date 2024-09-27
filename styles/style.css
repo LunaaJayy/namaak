@@ -611,31 +611,42 @@ margin-bottom: 32px;
 	justify-content: space-between;
 }
 
+
 .besparing input[type='range'] {
 	-webkit-appearance: none;
 	width: 100%;
-	background-color: #00966e;
-	height: 5px;
+	background-color: var(--border-kleur);
+	color: var(--knop-kleur-groen);
+	height: 3px;
 }
 
+.besparing input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color: var(--knop-kleur-groen);
+	height: 20px;
+	width: 20px;
+	border-radius: 100px;
+	/* box-shadow: 5px 5px var(--knop-kleur-groen); */
+}
 
-.besparing>p:last-of-type, .besparing>p:nth-last-of-type(2) {
+.besparing>p:last-of-type, .besparing>p:nth-last-of-type(2), .besparing>p:nth-last-of-type(3) {
 	font-family: "Baloo 2";
 	font-weight: 700;
 	padding: 0;
 }
 
-.besparing>p:nth-last-of-type(2) {
+.besparing>p:nth-last-of-type(3) {
 	font-size: 28px;
 	line-height: 28px;
 	padding-top: 25px;
 }
 
-.besparing>p:last-of-type {
+.besparing>p:last-of-type, .besparing>p:nth-last-of-type(2) {
 	font-size: 48px;
 	line-height: 48px;
-	padding-bottom: 25px;
+	display: inline;
 }
+
 
 .besparing a:nth-of-type(1) {
 	color: var(--blijft-wit);
@@ -650,6 +661,8 @@ margin-bottom: 32px;
 	border-radius: 4px;
 	height: 48px;
 	align-content: center;
+
+	margin-top: 25px;
 }
 
 .besparing a:nth-of-type(2) {
@@ -1164,4 +1177,3 @@ margin-bottom: 32px;
 	color: var(--blauwe-tekst);
 	text-decoration: underline;
 }
-

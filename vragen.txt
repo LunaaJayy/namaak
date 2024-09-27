@@ -15,7 +15,7 @@ bij 'ons woningaanbod' doet de 'object-fit: cover' het niet
 
 OVER-ONS.HTML
 moet de eerste img en h1 ook in section?
-
+heb ik nu wel gedaan
 
 ALGEMEEN
 custom properties gebruiken :) eerste les!
@@ -30,4 +30,8 @@ niet groter wordt)
 --> ipv bij de huizen dat in een li doet, kun 
     je het als article binnen een section doen
 
-///Moet je grid gebruiken?
+Moet je grid gebruiken?
+maakt niet uit, gebruik ik
+
+
+
