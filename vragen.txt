@@ -33,5 +33,8 @@ niet groter wordt)
 Moet je grid gebruiken?
 maakt niet uit, gebruik ik
 
+///light-dark mode moet gewoon met classes aanmaken? en dan die
+met javascript toevoegen?
+
 
 

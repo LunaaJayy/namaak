@@ -6,3 +6,10 @@ Image croppen:
 Sliders stylen:
     https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/
 
+Javascript input sliders weergeven:
+    https://chatgpt.com/share/66f67dc1-52d0-8012-963c-b7f4a4bb5d5e
+    https://www.shecodes.io/athena/77658-how-to-get-the-value-of-an-input-in-javascript#:~:text=To%20get%20the%20value%20of%20an%20input%20in%20JavaScript%2C%20you,user%20in%20the%20input%20field.&text=%2F%2F%20HTML%20%3Cinput%20type%3D%22,%3B%20console.log(inputValue)%3B
+
+Intersection observer:
+    https://dev.to/jslim/fading-up-sections-using-intersection-observer-3fhj
+    
