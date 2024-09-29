@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.makelaarsland.nl // https://www.makelaarsland.nl/over-ons/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Homepagina  
   <img src="readme-images/makelaarsland-home.jpeg" width="375px" alt="de homepagina van makelaarsland">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Over ons pagina 
   <img src="readme-images/makelaarsland-overons.JPG" width="375px" alt="de pagina over makelaarsland, met medewerkers">
  
 </details>
@@ -56,9 +56,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Als ik met de voice control over de website probeer te gaan, blijft hij als ik op tab druk hangen bij de sliders die je wel omhoog en naar beneden kan controleren.
+  Als ik met de voice control over de website probeer te gaan, blijft hij als ik op tab druk hangen bij de sliders die je wel omhoog en naar beneden kan controleren. Echter, voor de rest kun je dus niet naar beneden op de pagina via tab/pijltjes.
 
-  
+  De website krijgt ook pluspunten omdat de contrast tussen de kleuren goed genoeg is, dat de meeste mensen het kunnen lezen. Dit hoef ik dus niet te veranderen in mijn eigen pagina.
+
+
 
 </details>
 
@@ -168,7 +170,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Ondanks dat mijn website is gemaakt om alleen op de mobiel te zien, is hij ook best wel responsive. 
+
+  Ik heb dezelfde kleuren gebruikt als op de originele website, dus het contrast tussen de kleuren is goed genoeg om te lezen. Daarnaast heb ik ook een light/dark mode, die kleuren hebben ook een hoog genoeg contrast tussen elkaar dat het makkelijk te lezen is.
+
+  De voiceover in mijn website doet het wel beter dan op de originele website. je kan hier namelijk verder komen dan de sliders als je op tab drukt. Daarnaast hebben al mijn foto's een alt tekst.
 
 </details>
 
