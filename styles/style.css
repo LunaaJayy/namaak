@@ -203,6 +203,7 @@ h1 {
 
 /* header */
 /* fotos en teksten */
+
 header section:nth-of-type(2) div img {
 	width: 80px;
 	margin: auto 8px;

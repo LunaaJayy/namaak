@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.makelaarsland.nl // https://www.makelaarsland.nl/over-ons/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/makelaarsland-home.jpeg" width="375px" alt="de homepagina van makelaarsland">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/makelaarsland-overons.JPG" width="375px" alt="de pagina over makelaarsland, met medewerkers">
  
 </details>
 
@@ -56,7 +56,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Als ik met de voice control over de website probeer te gaan, blijft hij als ik op tab druk hangen bij de sliders die je wel omhoog en naar beneden kan controleren.
+
+  
 
 </details>
 
@@ -88,26 +90,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het enige wat ik heb is de HTML van de eerste pagina, het was een hoop kopieer en plak werk.
+  Ik heb dus nog niet zoveel vragen omdat HTML/CSS mij goed ligt.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Luna Jay        | Catharina          | Jilke        | Volkan           |
+  | ---             | ---                | ---          | ---              |
+  | Hoe kun je het  | Zelfde vraag als   | Eigen vragen | Eigen vragen     |
+  | beste typografie| Luna Jay           |              |                  |
+  | inladen?        |                    |              |                  |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Dit zijn de punten/aantekeningen die ik heb opgeschreven:
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  moet de eerste img en h1 van de over-ons pagina ook in section?
+  heb ik nu wel gedaan, deze heb ik aan de header toegevoegd, net als bij de index pagina
+
+  custom properties gebruiken :) eerste les!
+    kan je dus ook heel makkelijk een light en dark mode toevoegen.
+
+  box-sizing: border-box is heel handig, want als je zonder dat een margin 
+  aan een element toevoegt telt dat bij de width van het element op, maar als je 
+  border-box toevoegt gaat de margin/padding ipv aan de buitenkant van het object
+  aan de binnenkant van het object worden toevoegt (waardoor hij in principe dus
+  niet groter wordt)
+
+  --> ipv bij de huizen dat in een li doet, kun 
+    je het als article binnen een section doen
 
 </details>
 
@@ -121,26 +134,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ De HTML/CSS van de eerste pagina is zo goed als af. Alleen de footer moet nog vormgegeven worden.
+ Ik heb wel een aantal vragen wat betreft de CSS.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Iedereen had echt zijn eigen vragen dus gaven we elkaar de kans om deze te stellen, ik luisterde
+  mee met de antwoorden die werden gegeven.
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  Dit zijn wat vragen die zijn beantwoord:  
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  --> ipv bij de huizen die 'te koop' staan dat je dat in een li doet, kun 
+    je het als article binnen een section doen
+
+    de a bij de reviewsection verplaats niet naar center en niet
+  als er een padding of margin wordt toegevoegd.
+  --dat is omdat hij display inline was en niet block
+
+  bij 'ons woningaanbod' doet de 'object-fit: cover' het niet
+  --je moest nog op de container overflow:hidden doen.
 
 </details>
 
@@ -168,26 +182,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijn website is eigenlijk (qua basis HTML, CSS en Javascript) af! Het enige wat ik nog moet doen is de javascript
+  die gericht is op het verbeteren van service.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Deze agenda was niet van toepassing voor de laatste voortgangsgesprekken, we gingen vooral individueel vragen stellen.
+  We waren ook later begonnen omdat niet iedereens vraag (van het vorige groepje) beantwoord was. Dit was dus echt het 
+  moment voor iedereens laatste vragen.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  Ik heb erg korte vragen. Zo is er onderaan mijn index pagina een stukje dat wit is, echter zou ik dat graag weg willen halen
+  omdat dat niet in de originele versie van makelaarsland zit.
+    <img src="readme-images/witte-in-website.png" width="375px" alt="het witte vlake in pagina">
+  
+  Daarnaast heb ik een vraag over light/dark mode, op welke manier we deze in de website moeten verwerken.
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  De aantekeningen die ik heb gemaakt naar aanleiding van de meeting:
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  hoe haal ik het witte voor de footer weg?
+  kan niet!
+
+  Gebruik Intersection Observer voor een servicegerichte verbetering.
+  Je kunt met :root de light/dark mode doen, zie hoe je het al in de code hebt gedaan.
 
 </details>
 
@@ -201,19 +218,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/easter-egg-bewijs.png" width="375px" alt="De easter egg werkt, als je op 'k' drukt komen Martijn en Bob ze tevoorschijn">
+  <img src="readme-images/gridgebruik.png" width="375px" alt="Ik heb grid gebruikt in de over-ons pagina">
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="De hamburgermenu zit ook in mijn website verwerkt">
+  <img src="readme-images/reviews-scroll.png" width="375px" alt="Je kunt bij een aantal sections ook horizontaal scrollen">
+  <img src="readme-images/sliders-werken.png" width="375px" alt="De sliders werken en doen ook de juiste berekeningen">
+  <img src="readme-images/darkmode.png" width="375px" alt="Er zit ook een darkmode in mijn pagina">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  De sliders waren verbazingwekkend makkelijker dan ik dacht. Aan de hand van de originele pagina kon ik makkelijk het sommetje bedenken die zij hadden gebruikt om de besparing te berekenen, en na wat gepuzzel werkte dit snel bij mijn eigen pagina.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Heel veel elementen die ik wilde toevoegen aan de hand van mijn servicegerichte website waren ook makkelijk te doen na wat opzoek werk. Gelukkig had ik ook nog veel aantekeningen gemaakt vorig jaar dus kon ik het daar ook opzoeken. Dit bijvoorbeeld met het gejuich van de icoontjes bij de reviews.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Helaas is de volledige vormgeving van de sliders niet gelukt wegens gebrek aan tijd, ik wilde ervoor zorgend dat het stukje dat al 'geslide' was ook groen werd. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
 </details>
 
 
@@ -223,14 +244,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Bronnenlijst
 
 <details open>
-  <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
+1. De lessen
 
-  1. bron 1
-  2. bron 2
-  3. ...
+2. Image croppen:
+    Cloudinary - https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css#:~:text=with%20the%20message.-,Crop%20Using%20Width%2C%20Height%2C%20and%20Overflow%20CSS%20Properties,and%20set%20overflow%20to%20hidden.
+
+3. Sliders stylen:
+    Smash Magazine - https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/
+
+4. Javascript input sliders weergeven:
+    OpenAI ChatGPT - https://chatgpt.com/share/66f67dc1-52d0-8012-963c-b7f4a4bb5d5e
+    Shecodes - https://www.shecodes.io/athena/77658-how-to-get-the-value-of-an-input-in-javascript#:~:text=To%20get%20the%20value%20of%20an%20input%20in%20JavaScript%2C%20you,user%20in%20the%20input%20field.&text=%2F%2F%20HTML%20%3Cinput%20type%3D%22,%3B%20console.log(inputValue)%3B
+
+5. Intersection observer:
+   DEV Community - https://dev.to/jslim/fading-up-sections-using-intersection-observer-3fhj
+
+6. Keydown event:
+    Geeks for geeks - https://www.geeksforgeeks.org/how-to-create-keyboard-shortcuts-in-javascript/    
 
 </details>
